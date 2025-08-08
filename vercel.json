@@ -7,13 +7,13 @@
       "runtime": "python3.9"
     }
   },
-  "env": {
-    "ADMIN_USERNAME": "@admin_username",
-    "ADMIN_PASSWORD": "@admin_password", 
-    "JWT_SECRET": "@jwt_secret",
-    "SUPABASE_URL": "@supabase_url",
-    "SUPABASE_ANON_KEY": "@supabase_anon_key"
-  },
+ "env": {
+  "ADMIN_USERNAME": "$ADMIN_USERNAME",
+  "ADMIN_PASSWORD": "$ADMIN_PASSWORD", 
+  "JWT_SECRET": "$JWT_SECRET",
+  "SUPABASE_URL": "$SUPABASE_URL",
+  "SUPABASE_ANON_KEY": "$SUPABASE_ANON_KEY"
+},
   "rewrites": [
     {
       "source": "/api/(.*)",
