@@ -1,0 +1,29 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "installCommand": "npm install",
+  "functions": {
+    "api/auth/login.py": {
+      "runtime": "python3.9"
+    },
+    "api/data/upload.py": {
+      "runtime": "python3.9"
+    },
+    "api/data/results.py": {
+      "runtime": "python3.9"
+    },
+    "api/data/clear.py": {
+      "runtime": "python3.9"
+    },
+    "api/health.py": {
+      "runtime": "python3.9"
+    }
+  },
+  "env": {
+    "ADMIN_USERNAME": "$admin_username",
+    "ADMIN_PASSWORD": "$admin_password",
+    "JWT_SECRET": "$jwt_secret",
+    "SUPABASE_URL": "$supabase_url",
+    "SUPABASE_ANON_KEY": "$supabase_anon_key"
+  }
+}
