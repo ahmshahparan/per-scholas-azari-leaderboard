@@ -3,9 +3,7 @@
     "api/**/*.py": {
       "runtime": "@vercel/python"
     }
-  }
-}
-{
+  },
   "buildCommand": "npm run build",
   "outputDirectory": "dist"
 }
